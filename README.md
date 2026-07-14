@@ -18,26 +18,8 @@ Each service runs in its own container and communicates through a Docker bridge 
 
 # Architecture
 
-```
-                +----------------------+
-                |      Client          |
-                +----------+-----------+
-                           |
-                        Port 8080
-                           |
-                    +------+------+
-                    |   Tomcat    |
-                    |  Java App   |
-                    +------+------+
-                           |
-        ----------------------------------------
-        |                  |                  |
-        |                  |                  |
-+-------+------+   +-------+------+   +-------+------+
-|   MariaDB    |   | RabbitMQ     |   | Memcached    |
-|    3306      |   |5672 /15672   |   |   11211      |
-+--------------+   +--------------+   +--------------+
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cb005e09-a0bf-48a6-b282-4f07262bf15f" />
+
 
 ---
 
